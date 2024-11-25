@@ -14,14 +14,14 @@ defineProps<{
 </script>
 
 <template>
-   <li class="w-full min-h-[700px] bg-[#D5CCFF] p-6 rounded-2xl flex flex-col gap-y-6">
+   <li class="w-full min-h-[700px] bg-[#D5CCFF] p-6 rounded-2xl flex flex-col gap-y-6 pr-2.5">
       <div class="flex gap-x-4">
          <img :src="logo" alt="todo icon" />
          <h2 class="text-[32px] text-[#2B1887] font-bold">{{ name }}</h2>
       </div>
-      <div class="max-h-[700px] overflow-auto">
+      <div class="h-[700px] overflow-auto">
          <draggable
-            class="listGroup h-full flex flex-col gap-y-6 min-h-32"
+            class="listGroup h-full flex flex-col gap-y-6 min-h-32 pr-1.5"
             :list="list"
             group="tasks"
             itemKey="name"
