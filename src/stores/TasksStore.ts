@@ -58,7 +58,6 @@ export const useTasksStore = defineStore("tasks", () => {
 
       initializeTaskMap();
 
-      // TODO: fix
       for (const task of taskData.value.tasks) {
          const matchesTitle = search.title
             ? task.title.toLowerCase().includes(search.title.toLowerCase())
